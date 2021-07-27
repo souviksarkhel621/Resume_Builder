@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Resume</title>
+
+</head>
+
+<body>
+  <h1>CV Template 1</h1>
+  <table>
+    <tr>
+      <h1><%=name%></h1>
+      <p><b><%=aboutyou%></b></p>
+      <p><b>Mobile No:-</b><%=phone%></p>
+      <p><b>Email Id:-</b><%=email%></p>
+      <p><b>Address:-</b><%=address%></p>
+      <p><b>City:-</b><%=city%></p>
+      <p><b>pincode:-</b><%=pincode%></p>
+    </tr>
+  </table>
+
+  <hr size="3" noshade color="#556B2F">
+  <h3><u><strong>Education:-</strong></u></h3>
+  <table border="3">
+    <thead>
+      <th>Degree</th>
+      <th>School/College</th>
+      <th>Year</th>
+      <th>Stream</th>
+      <th>Score</th>
+    </thead>
+    <tr>
+      <td align="center"><strong><%=ugdegree%></strong></td>
+      <td align="center"><%=ugcollege%> </td>
+      <td align="center"><%=ugyear%></td>
+      <td align="center"><%=ugdept%></td>
+      <td align="center"><%=ugscore%></td>
+    </tr>
+    <tr>
+      <td align="center"><strong> <%=hscourse%> </strong></td>
+      <td align="center"><%=hsschool%> </td>
+      <td align="center"><%=hsyear%></td>
+      <td align="center"><%=hsstream%></td>
+      <td align="center"><%=hsscore%></td>
+    </tr>
+    <tr>
+      <td align="center"><strong><%=scourse%></strong></td>
+      <td align="center"><%=ssclname%> </td>
+      <td align="center"><%=syear%></td>
+      <td align="center">--</td>
+      <td align="center"><%=sscore%></td>
+    </tr>
+  </table>
+  <hr size="3" noshade color="#556B2F">
+  <h3><u>Experience</u></h1>
+  <div class="">
+    <h3><%=cname %></h3>
+ <p><%=startingdate %> to <%=endingdate %></p>
+ <p>Description:-<%= pwjd %></p>
+  </div>
+<hr size="3" noshade color="#556B2F">
+  <h3><u>Skillset:-</u></h3>
+  <p><%= skills %></p>
+  <hr size="3" noshade color="#556B2F">
+    <h3><u>Acheivements:-</u></h3>
+    <p><%= awards %></p>
+    <hr size="3" noshade color="#556B2F">
+</body>
+
+</html>

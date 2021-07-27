@@ -1,0 +1,37 @@
+<style media="screen">
+  .container{
+    background-color:#FFEBC9;
+    padding-top:150px;
+    font-size:2.2em;
+    padding-left:50px;
+  }
+  .mybutton{
+    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin:30px;
+  }
+  h1{
+    color:#B05B3B;
+  }
+  #forgotpassword{
+    background-color:#003638;
+    color:white;
+  }
+</style>
+<div class="container">
+  <h1>Forgot Password</h1>
+
+          <form action="/forgetpassword" method="POST">
+            <div class="frm">
+              <label for="email">Please write Email to reset password:-</label>
+              <input type="email" name="username">
+            </div>
+            <button type="submit" class="mybutton">Generate Mail</button>
+          </form>
+        </div>

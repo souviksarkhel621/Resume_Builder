@@ -1,0 +1,39 @@
+<style media="screen">
+  .container{
+    background-color:#FFEBC9;
+    padding-top:150px;
+    font-size:2.2em;
+    padding-left:50px;
+  }
+  .mybutton{
+    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin:30px;
+  }
+  h1{
+    color:#B05B3B;
+  }
+</style>
+<div class="container">
+  <h1>Register</h1>
+  <p>Create the best looking resumes and get shortlisted easily</p>
+
+          <form action="/register" method="POST">
+            <div class="frm">
+              <label for="email">Email:-</label>
+              <input type="email" name="email">
+            </div>
+            <div class="frm">
+              <label for="password">Password:-</label>
+              <input type="password"  name="password">
+            </div>
+            <button type="submit" class="mybutton">Register</button>
+          </form>
+
+        </div>

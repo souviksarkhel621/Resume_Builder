@@ -1,0 +1,153 @@
+
+
+<style media="screen">
+  * {
+  max-width: 700px;
+  margin: auto;
+}
+
+
+/*body {
+    min-width: 500px;
+}*/
+
+div {
+  border-radius: 5px;
+}
+
+#header {
+  height: 40px;
+  width: 100%;
+  background-color: #ffcccc;
+  position: fixed;
+  z-index: 1;
+}
+
+#title {
+  margin-left: 3%;
+}
+
+#footer {
+  height: 50px;
+  width: 100%;
+  background-color: #ffcccc;
+  clear: both;
+  position: relative;
+}
+
+.left {
+  height: 1000px;
+  width: 45px;
+  background-color: #e0eeee;
+  float: left;
+  position: fixed;
+}
+
+.right {
+  height: 1000px;
+  width: 45px;
+  background-color: white;
+  float: right;
+  position: inherit;
+}
+
+.stuff {
+  display: inline-block;
+  margin-top: 6px;
+  margin-left: 55px;
+  width: 75%;
+  height: 1000px;
+}
+
+p,
+li {
+  font-family: 'Cormorant Garamond';
+}
+
+.head {
+  font-size: 20px;
+}
+
+#name {
+  font-family: Sacramento;
+  float: right;
+  margin-top: 10px;
+  margin-right: 4%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 430px) {
+  .left,
+  .right {
+    display: none;
+  }
+  .stuff {
+    width: 100%;
+    margin-left: 10px;
+  }
+}
+</style>
+<h1>2nd Resume</h1>
+<div id="header"></div>
+<div class="left"></div>
+<div class="stuff">
+  <br><br>
+  <h1><%=name %></h1>
+  <p><%=email %> |    | <%=phone %></p><br>
+  <p><%=address %>  |  <%=city %>  |  <%=pincode %></p>
+  <hr />
+  <br>
+  <h1 class="head"><u>About Me:-</u></h1>
+  <p><%=aboutyou %></p>
+
+
+<br>
+
+  <h1 class="head"><u>Experience</u></h1>
+  <div class="">
+    <h3><%=cname %></h3>
+ <p><%=startingdate %> to <%=endingdate %></p>
+ <p>Description:-<%= pwjd %></p>
+  </div>
+
+<br>
+  <h1 class="head"><u>Educational Background</u></h1>
+<div class="">
+  <h3><%= ugdegree %> from <%= ugcollege %> </h3>
+  <p>
+    <strong>Batch of:-</strong><%= ugyear %>&emsp;
+    <strong>Score:</strong><%= ugscore %>&emsp;
+    <strong>Dept:-</strong><%= ugdept %>
+  </p>
+</div>
+<div class="">
+  <h3><%= hscourse %> from <%= hsschool %> </h3>
+  <p>
+    <strong>Passing Year:-</strong><%= hsyear %>&emsp;
+    <strong>Score:</strong><%= hsscore %>&emsp;
+    <strong>Stream:-</strong><%= hsstream %>
+  </p>
+</div>
+<div class="">
+  <h3><%= scourse %> from <%= ssclname %> </h3>
+  <p>
+    <strong>Passing Year:-</strong><%= syear %>&emsp;
+    <strong>Score:</strong><%= sscore %>&emsp;
+  </p>
+</div>
+
+
+<br>
+<h1 class="head"><u>Skills:-</u></h1>
+    <p><%= skills %></p>
+    <br>
+    <h1 class="head"><u>Acheivements:-</u></h1>
+        <p><%= awards %></p>
+
+<div class="right"></div>
+<div id="footer">
+  <h2 id="name">Made By SOUVIK SARKHEL</h2></div>
